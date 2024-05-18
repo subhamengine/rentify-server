@@ -13,7 +13,7 @@ const pool = new Pool({
     console.log('Connected to PostgreSQL cluster successfully!');
 
     const createTableRentifyProperties = `
-      CREATE TABLE IF NOT EXISTS "rentifyProperties2" (
+      CREATE TABLE IF NOT EXISTS "rentifyPropertiesFinal" (
         id SERIAL PRIMARY KEY,
         propertyName VARCHAR(100) NOT NULL,
         place VARCHAR(50) NOT NULL,
@@ -22,7 +22,9 @@ const pool = new Pool({
         details VARCHAR(200) NOT NULL,
         seller_id VARCHAR(30) NOT NULL,
         seller_name VARCHAR(30) NOT NULL,
-        picturePath varchar(1000) NOT NULL
+        picturePath varchar(1000) NOT NULL,
+        likedby TEXT[],
+        likes VARCHAR(500)
       );
     `;
 
