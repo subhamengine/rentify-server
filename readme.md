@@ -1,12 +1,35 @@
-Here is the frontend deployed link - rentify-client-xi.vercel.app
+`Rventify`
 
-Note:- The backend is not deployed, to access the frontend we have to run the backend locally at port 5000.
+Technologies used - 
 
- To Run backend -
+Frontend - reactjs, tailwindCss
 
-1. Git clone the repository locally
-2. Go to "rentify-server" directory and open in terminal.
-3. run "npm install"
-4. run nodemon index.js
+Backend - Nodejs, ExpressJs
 
-The backend will start running at port 5000
+Database - PostgreSQl
+
+`Deployed links:- `
+
+Frontend - https://rentify-client-xi.vercel.app/
+Backend - https://rentify-server.onrender.com
+
+(Note:- The backend is deployed on render.com(free), so the operations could be slow. Please refresh few times and wait for 20-30 min for the backend to spin up.)
+
+
+To run this on you local system - 
+
+1. Git clone the frontend app (link:- https://github.com/subhamengine/rentify-client)
+2. Git clone the backemd app (link:- https://github.com/subhamengine/rentify-server)
+
+`Backend`
+1. Go to rentify-server directory - 
+2. Run `npm install` to install the packages.
+3. run `nodemon index.js` to run the backend locally.
+
+`Frontend`
+1. Go to rentify-client directory - 
+2. Run `npm install` to install the packages
+3. make a .env file in the root directory and add - `REACT_APP_API_BASE_URL = "localhost:5000"`
+
+4. run the app `npm start`
+
